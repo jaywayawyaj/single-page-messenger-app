@@ -5,9 +5,10 @@ let button = document.getElementById('button')
     let message = new Message(messageText.value)
     let messageLog = document.getElementById("messageLog")
 
-    messageLog.prepend(message.getText())
-    console.log("getting here")
+    let messageInsert = document.createElement("P")
+    messageInsert.innerText = message.getText();
+
+    messageLog.prepend(messageInsert)
+
+    messageText.value = ""
   })
-
-
-// document.addEventListener('load', init);
