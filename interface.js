@@ -6,7 +6,7 @@ let button = document.getElementById('button')
     let messageLog = document.getElementById("messageLog")
 
     let messageInsert = document.createElement("P")
-    messageInsert.innerText = message.getText();
+    messageInsert.innerText = `${message.text} \n ${message.time}`
 
     messageLog.prepend(messageInsert)
 
