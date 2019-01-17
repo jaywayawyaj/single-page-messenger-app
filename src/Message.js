@@ -1,6 +1,6 @@
 class Message {
-  constructor(text) {
+  constructor(text, time = new Date) {
     this.text = text;
-    this.time = new Date;
+    this.time = `${time.toLocaleTimeString()} ${time.toLocaleDateString()}`;
   }
 }
