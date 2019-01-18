@@ -7,9 +7,9 @@ let button = document.getElementById('button')
     let messageLog = document.getElementById("messageLog")
 
     let messageInsert = document.createElement("P")
-    messageInsert.innerText = `${message.text} \n ${message.time}`
+    messageInsert.innerText = `${message.text} \n ${message.formatTime()}`
 
     messageLog.prepend(messageInsert)
 
     messageText.value = ""
-  })
+  });
